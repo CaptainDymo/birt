@@ -145,7 +145,7 @@
       <unit id="org.osgi.service.repository" version="0.0.0"/>
       <unit id="slf4j.api" version="0.0.0"/>
       <unit id="slf4j.simple" version="0.0.0"/>
-      <repository location="https://download.eclipse.org/releases/latest"/>
+      <repository location="https://download.eclipse.org/eclipse/updates/4.37-I-builds"/>
       <repository location="https://download.eclipse.org/cbi/updates/license"/>
       <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/nightly/latest"/>
       <repository location="https://download.eclipse.org/tools/orbit/simrel/maven-jetty/release/latest"/>
