@@ -28,7 +28,7 @@
       <unit id="jakarta.xml.bind-api" version="2.3.3"/>
       <unit id="jakarta.xml.bind-api" version="4.0.2"/>
       <unit id="jakarta.xml.soap-api" version="0.0.0"/>
-      <unit id="javax.servlet-api" version="0.0.0"/>
+      <unit id="jakarta.servlet-api" version="0.0.0"/>
       <unit id="javax.xml.rpc-api" version="0.0.0"/>
       <unit id="org.apache.aries.spifly.dynamic.bundle" version="0.0.0"/>
       <unit id="org.apache.axis" version="0.0.0"/>
@@ -147,7 +147,7 @@
       <unit id="org.osgi.service.repository" version="0.0.0"/>
       <unit id="slf4j.api" version="0.0.0"/>
       <unit id="slf4j.simple" version="0.0.0"/>
-      <repository location="https://download.eclipse.org/eclipse/updates/4.37-I-builds"/>
+      <repository location="https://download.eclipse.org/releases/2026-12"/>
       <repository location="https://download.eclipse.org/cbi/updates/license"/>
       <repository location="https://download.eclipse.org/tools/orbit/simrel/orbit-aggregation/nightly/latest"/>
       <repository location="https://download.eclipse.org/tools/orbit/simrel/maven-jetty/release/latest"/>
