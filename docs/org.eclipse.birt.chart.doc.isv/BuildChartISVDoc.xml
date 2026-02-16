@@ -204,14 +204,30 @@
                 <antcall target = "chartscriptJavadoc"/>
                 -->
 		<!-- replace onLoad="top.loadFrames()" with onLoad="", this javascript messes things up with viewvc params -->
+		<available file="chart/api/index.html" property="chart.index.exists"/>
+		<available file="chartui/api/index.html" property="chartui.index.exists"/>
+		<available file="chartscript/api/index.html" property="chartscript.index.exists"/>
+
+		<antcall target="replaceChartIndexOnLoad"/>
+		<antcall target="replaceChartUiIndexOnLoad"/>
+		<antcall target="replaceChartScriptIndexOnLoad"/>
+	</target>
+
+	<target name="replaceChartIndexOnLoad" if="chart.index.exists">
 		<replace file="chart/api/index.html">
 			<replacetoken><![CDATA[onLoad="top.loadFrames()"]]></replacetoken>
 			<replacevalue><![CDATA[onLoad=""]]></replacevalue>
 		</replace>
+	</target>
+
+	<target name="replaceChartUiIndexOnLoad" if="chartui.index.exists">
 		<replace file="chartui/api/index.html">
 			<replacetoken><![CDATA[onLoad="top.loadFrames()"]]></replacetoken>
 			<replacevalue><![CDATA[onLoad=""]]></replacevalue>
 		</replace>
+	</target>
+
+	<target name="replaceChartScriptIndexOnLoad" if="chartscript.index.exists">
 		<replace file="chartscript/api/index.html">
 			<replacetoken><![CDATA[onLoad="top.loadFrames()"]]></replacetoken>
 			<replacevalue><![CDATA[onLoad=""]]></replacevalue>
