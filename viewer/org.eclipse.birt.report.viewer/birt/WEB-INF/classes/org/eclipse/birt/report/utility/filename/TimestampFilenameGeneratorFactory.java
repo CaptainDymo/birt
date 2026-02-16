@@ -12,7 +12,7 @@
  ************************************************************************************/
 package org.eclipse.birt.report.utility.filename;
 
-import javax.servlet.ServletContext;
+import jakarta.servlet.ServletContext;
 
 /**
  * Factory class for the time stamp file name generator.
